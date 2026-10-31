@@ -1,0 +1,43 @@
+/*reset css*/
+*{
+    box-sizing: border-box;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.flex-item {
+  width: 25%;
+  background-color: #d9827b;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* màn hình tablet */
+@media screen and (max-width: 1024px) {
+  .flex-container{
+    flex-wrap: wrap;
+  }
+}
+
+/* màn hình mobile */
+@media screen and (max-width: 768px) {
+    .flex-container{
+        flex-wrap: wrap;
+  }
+  .flex-item{
+    width: 100%;
+  }
+}
